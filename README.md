@@ -1,3 +1,11 @@
+# Featured Images
+<div align="center">
+    <img src="./screenshots/screenshot_1.png" width="1920">
+    <img src="./screenshots/screenshot_2.png" width="1920">
+    <img src="./screenshots/screenshot_3.png" width="1920">
+    <img src="./screenshots/screenshot_4.png" width="1920">
+</div>
+
 # TasksManager
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.

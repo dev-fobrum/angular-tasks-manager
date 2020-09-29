@@ -24,7 +24,17 @@ export class ListarTarefaComponent implements OnInit {
     $event.preventDefault();
 
     if (confirm('Deseja remover a tarefa "' + tarefa.nome + '"?')) {
+      this.tarefaService.remover(tarefa.id);
+      this.tarefas = this.tarefaService.listarTodos();
+    }
+  }
 
+  alterarStatus($event: any, tarefa: Tarefa): void {
+    if (confirm('Deseja alterar o status da tarefa"' + tarefa.nome + '"?')) {
+      this.tarefaService.alterarStatus(tarefa.id);
+      this.tarefas = this.tarefaService.listarTodos();
+    } else {
+      $event.preventDefault();
     }
   }
 }
